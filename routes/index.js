@@ -31,6 +31,6 @@ router.put('/api/music/:id', musicController.update);
 router.delete('/api/music/:id', musicController.delete);
 
 /*Logs Routes*/
-router.get('/api/logs', logController.list);
+router.get('/api/logs/:page', logController.list);
 
 module.exports = router;

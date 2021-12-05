@@ -4,8 +4,8 @@ const Logs = require('../models').Logs
 
 class logController {
     async list(req, res) {
-        let page = req.query.page
-        let count = 2
+        let page = req.params.page
+        let count = 5
         return Logs
             .findAll({
                 offset: page * count - count,
