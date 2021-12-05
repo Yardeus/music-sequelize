@@ -4,6 +4,7 @@ var router = express.Router();
 const authorController = require('../controllers').author
 
 const musicController = require('../controllers').music
+const logController = require('../controllers').log
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -28,5 +29,8 @@ router.get('/api/music/date/:date', musicController.getByDate);
 router.post('/api/music', musicController.add);
 router.put('/api/music/:id', musicController.update);
 router.delete('/api/music/:id', musicController.delete);
+
+/*Logs Routes*/
+router.get('/api/logs', logController.list);
 
 module.exports = router;

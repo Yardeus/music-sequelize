@@ -1,6 +1,6 @@
 const {Op} = require('sequelize')
 const Music = require('../models').Music
-const createLog = require('./logs')
+const createLog = require('./createLog')
 
 class musicController {
     async list(req, res) {

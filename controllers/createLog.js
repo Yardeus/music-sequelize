@@ -1,10 +1,10 @@
 
-const Logs = require('../models').Logs
+const CreateLog = require('../models').Logs
 
 
 module.exports = (name, ip, description) => {
         let now = new Date();
-        return Logs
+        return CreateLog
             .create({
                 name: name,
                 datetime: now,

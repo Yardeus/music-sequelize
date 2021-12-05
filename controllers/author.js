@@ -1,6 +1,6 @@
 const {Op} = require('sequelize')
 const Author = require('../models').Author
-const createLog = require('./logs')
+const createLog = require('./createLog')
 
 class authorController {
     async list(req, res) {
