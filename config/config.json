@@ -1,23 +1,26 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "root",
-    "database": "music",
-    "host": "127.0.0.1",
+    "username": "eqvsbvsoztskek",
+    "password": "e50f278f2463cefc6ddc197505e7ac6f92959ead9b52e69b3131d382714ee296",
+    "database": "d6lvpu1uvqcpvd",
+    "host": "ec2-52-213-167-210.eu-west-1.compute.amazonaws.com",
+    "port": 5432,
     "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
-    "password": "root",
-    "database": "music",
-    "host": "127.0.0.1",
+    "username": "eqvsbvsoztskek",
+    "password": "e50f278f2463cefc6ddc197505e7ac6f92959ead9b52e69b3131d382714ee296",
+    "database": "d6lvpu1uvqcpvd",
+    "host": "ec2-52-213-167-210.eu-west-1.compute.amazonaws.com",
+    "port": 5432,
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "root",
-    "database": "music",
-    "host": "127.0.0.1",
+    "username": "eqvsbvsoztskek",
+    "password": "e50f278f2463cefc6ddc197505e7ac6f92959ead9b52e69b3131d382714ee296",
+    "database": "d6lvpu1uvqcpvd",
+    "host": "ec2-52-213-167-210.eu-west-1.compute.amazonaws.com",
+    "port": 5432,
     "dialect": "postgres"
   }
 }
