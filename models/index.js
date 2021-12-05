@@ -1,5 +1,6 @@
 'use strict';
-
+const pg = require('pg');
+pg.defaults.ssl = true;
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
