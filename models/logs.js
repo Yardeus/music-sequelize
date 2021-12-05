@@ -18,6 +18,6 @@ module.exports = (sequelize, DataTypes) => {
         sequelize,
         modelName: 'Logs',
     });
-   // Logs.sync({ alter: true })
+   Logs.sync({ force: true })
     return Logs;
 };

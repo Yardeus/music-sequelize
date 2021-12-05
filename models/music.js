@@ -24,6 +24,6 @@ module.exports = (sequelize, DataTypes) => {
 
 
 
-  Music.sync({ alter: true })
+  Music.sync({ force: true })
   return Music;
 };
