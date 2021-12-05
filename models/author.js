@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   class Author extends Model {
 
     static associate(models) {
-      Author.belongsTo(models.Music);
+
     }
   };
 
