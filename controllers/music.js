@@ -7,7 +7,7 @@ class musicController {
         let page = req.query.page
         let count = 2
         return Music
-            .findAll({
+            .findAndCountAll({
                 offset: page * count - count,
                 limit: count
             })
@@ -44,7 +44,7 @@ class musicController {
 
     async getByAuthorId(req, res) {
         return Music
-            .findAll({
+            .findAndCountAll({
                     where: {
                         author_id: req.params.id,
                     }
@@ -70,7 +70,7 @@ class musicController {
     async getByName(req, res) {
         console.log(req.params.name)
         return Music
-            .findAll({
+            .findAndCountAll({
                     where: {
                         name: {
                             [Op.like]: '%' + req.params.name + '%'
@@ -100,7 +100,7 @@ class musicController {
         let endDate = new Date(req.params.date)
         endDate.setDate(endDate.getDate() + 1)
         return Music
-            .findAll({
+            .findAndCountAll({
                     where: {
                         createdAt: {
                             [Op.gt]: date,

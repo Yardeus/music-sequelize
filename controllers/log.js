@@ -11,9 +11,9 @@ class logController {
                 offset: page * count - count,
                 limit: count
             })
-            .then(authors => {
+            .then(logs => {
                 createLog("Просмотрены логи", req.ip)
-                res.status(200).send(authors)
+                res.status(200).send(logs)
             })
             .catch(error => {
                 createLog("Ошибка", req.ip, error)

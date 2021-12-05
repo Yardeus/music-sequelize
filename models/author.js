@@ -21,6 +21,6 @@ module.exports = (sequelize, DataTypes) => {
 
 
 
-  Author.sync({ force: true })
+  //Author.sync({ force: true })
   return Author;
 };

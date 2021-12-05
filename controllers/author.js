@@ -7,7 +7,7 @@ class authorController {
         let page = req.query.page
         let count = 2
         return Author
-            .findAll({
+            .findAndCountAll({
                 offset: page * count - count,
                 limit: count
             })
@@ -46,7 +46,7 @@ class authorController {
 
     async getByName(req, res) {
         return Author
-            .findAll({
+            .findAndCountAll({
                     where: {
                         name: {
                             [Op.like]: '%' + req.params.name + '%'
@@ -77,7 +77,7 @@ class authorController {
         let endDate = new Date(req.params.date)
         endDate.setDate(endDate.getDate() + 1)
         return Author
-            .findAll({
+            .findAndCountAll({
                     where: {
                         createdAt: {
                             [Op.gt]: date,
